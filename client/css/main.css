@@ -1,0 +1,57 @@
+body {
+	font-family: OpenSans;
+	font-weight: bold;
+}
+
+.scroll-down-btn {
+	margin-top: 20px;
+}
+
+#intro {
+	text-align: center;
+	background: url('/images/banner_dark.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 700px;
+	position: relative;
+
+}
+
+#title {
+	width: 340px;
+	height: auto;
+}
+
+.intro-text {
+	position: relative;
+	top: 130px;
+}
+
+#about, #products, #industries, #subscribe, #pilots {
+	padding: 400px 0;
+}
+
+.scroll-down-btn, .scroll-down-btn:link, .scroll-down-btn:visited {
+	font-size: 70px;
+	color: #fff;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.scroll-down-btn:hover, .scroll-down-btn i:hover {
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+
+@media (min-width: 1100px) {
+
+	#title{
+		width: 390px;
+		height: auto;
+	}
+
+}

@@ -1,0 +1,207 @@
+html, body, .container-fluid {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+@font-face {
+	font-family: BikoBlack;
+	src: url("../fonts/BikoBlack.otf") format("opentype");
+}
+
+@font-face {
+	font-family: BikoBold;
+	src: url("../fonts/BikoBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: BikoRegular;
+	src: url("../fonts/BikoRegular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: BikoLight;
+	src: url("../fonts/BikoLight.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: SlimJoe;
+	src: url("../fonts/SlimJoe.otf") format("opentype");
+}
+
+@font-face {
+	font-family: BigJohn;
+	src: url("../fonts/BigJohn.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Mohave;
+	src: url("../fonts/Mohave.otf") format("opentype");
+	font-style: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Mohave;
+	src: url("../fonts/Mohave.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Mohave;
+	src: url("../fonts/Mohave-Italics.otf") format("opentype");
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Mohave;
+	src: url("../fonts/Mohave-Bold.otf") format("opentype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Mohave;
+	src: url("../fonts/Mohave-Bold-Italics.otf") format("opentype");
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Mohave;
+	src: url("../fonts/Mohave-SemiBold-Italics.otf") format("opentype");
+	font-style: italic;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Mohave;
+	src: url("../fonts/Mohave-SemiBold.otf") format("opentype");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: WPDomino;
+	src: url("../fonts/WPDomino.ttf") format("opentype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: WPDomino;
+	src: url("../fonts/WPDomino-Bold.ttf") format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Moon;
+	src: url("../fonts/Moon.otf") format("opentype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Moon;
+	src: url("../fonts/Moon-Bold.otf") format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/Lato-Regular.otf") format("opentype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/LatoLight.otf") format("opentype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/LatoBold.ttf") format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Genome;
+	src: url("../fonts/GenomeThin.otf") format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansRegular.ttf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansBold.ttf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansItalic.ttf") format("opentype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansBoldItalic.ttf") format("opentype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansExtraBold.ttf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansExtraBoldItalic.ttf") format("opentype");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansLight.ttf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansLightItalic.ttf") format("opentype");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansSemibold.ttf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url("../fonts/OpenSansSemiboldItalic.ttf") format("opentype");
+	font-weight: 500;
+	font-style: italic;
+}
+
+.lighter {
+	color: #B8B8B8;
+}

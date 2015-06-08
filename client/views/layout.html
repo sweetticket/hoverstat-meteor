@@ -1,0 +1,21 @@
+<template name="Layout">
+  <head>
+    <title>HoverStat</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <!-- all the other local CSS/LESS files are automatically referenced -->
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div class="content-block">
+      {{> yield "content"}}
+    </div>
+
+    
+    <!-- Footer template -->
+      <!-- {{> Footer}} -->
+    <!-- //Footer template -->
+  </body>
+
+</template>
