@@ -26,10 +26,6 @@ html {
     left: 8px;
 }
 
-.navbar-nav {
-    float: right;
-}
-
 
 nav {
     font-size: 16px;
@@ -37,7 +33,7 @@ nav {
     font-weight: normal;
     /* not sure if we should use this bg */
     background-image: url('/images/overlay.png');
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
 }
 
 nav a:hover {
@@ -52,6 +48,9 @@ nav a:hover {
 
 @media(min-width:767px) {
 
+    .navbar-nav {
+        float: right;
+    }
 
     #logo, #logo_text {
         -webkit-transition: all .5s ease-in-out;
@@ -78,7 +77,7 @@ nav a:hover {
 
     .navbar {
         padding: 20px 0;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: transparent;
         border: none;
         -webkit-transition: all .5s ease-in-out;
         -moz-transition: all .5s ease-in-out;
@@ -215,6 +214,13 @@ nav a:hover {
 
 @media (max-width: 767px) {
 
+    .navbar-nav {
+        clear: both;
+    }
+
+    .navbar-nav li {
+        padding-left: 20px;
+    }
 
     #logo {
         height: 2.1em;
@@ -286,7 +292,7 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #40beb1;
 }
 
 .products-section {
@@ -300,19 +306,19 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #40beb1;
 }
 
 .pilots-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #fff;
 }
 
 .subscribe-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #40beb1;
 }
