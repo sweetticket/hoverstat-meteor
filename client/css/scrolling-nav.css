@@ -14,20 +14,67 @@ html {
     height: 100%;
 }
 
+#logo {
+    position: relative;
+    bottom: 12px;
+}
+
+#logo_text {
+    height: 2.5em;
+    position: relative;
+    bottom: 16px;
+    left: 8px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+
 nav {
     font-size: 16px;
     font-family: OpenSans;
     font-weight: normal;
     /* not sure if we should use this bg */
     background-image: url('/images/overlay.png');
+    background-color: rgba(255, 255, 255, 0);
 }
 
 nav a:hover {
     cursor: pointer;
 }
 
+
+@media (max-width: 766px) {
+
+}
+
+
 @media(min-width:767px) {
 
+
+    #logo, #logo_text {
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar-fixed-top #logo {
+        height: 3.5em;
+    }
+
+    .top-nav-collapse #logo {
+        height: 2.3em;
+
+    }
+
+    .navbar-fixed-top #logo_text {
+        opacity: 0;
+    }
+
+    .top-nav-collapse #logo_text {
+        opacity: 1.0; 
+    }
 
     .navbar {
         padding: 20px 0;
@@ -159,7 +206,30 @@ nav a:hover {
 
 }
 
+@media(max-width: 893px) and (min-width: 768px) {
+    #logo_text {
+        position: relative;
+        left: 5px;
+    }
+}
+
 @media (max-width: 767px) {
+
+
+    #logo {
+        height: 2.1em;
+        padding-top: 5px;
+    }
+
+    #logo_text {
+        opacity: 1.0;
+        height: 2.2em;
+        padding-top: 3px;
+        position: relative;
+        bottom: 50px;
+        left: 50px;
+    }
+
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
