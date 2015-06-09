@@ -10,7 +10,6 @@ if (Meteor.isClient) {
 
   Template.Main.rendered = function () {
 
-     $('.button-collapse').sideNav();
           //jQuery to collapse the navbar on scroll
       $(window).scroll(function() {
           if ($(".navbar").offset().top > 50) {
