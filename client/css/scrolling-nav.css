@@ -20,6 +20,10 @@ nav ul a {
     font-weight: normal;
 }
 
+.navbar {
+    min-height: 70px;
+}
+
 .navbar-fixed-top {
     box-shadow: none;
 }
@@ -76,12 +80,7 @@ nav a:hover {
     color: #009688;
 }
 
-@media (max-width: 766px) {
-
-}
-
-
-@media(min-width:767px) {
+@media(min-width:1200px) {
 
     .navbar-nav {
         float: right;
@@ -247,14 +246,7 @@ nav a:hover {
 
 }
 
-@media(max-width: 893px) and (min-width: 768px) {
-    #logo_text {
-        position: relative;
-        left: 5px;
-    }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
 
     .navbar-nav {
         clear: both;
@@ -266,16 +258,21 @@ nav a:hover {
 
     #logo {
         height: 2.1em;
-        padding-top: 5px;
+        position: absolute;
+        top: 0;
+        left: 5%;
     }
 
     #logo_text {
         opacity: 1.0;
-        height: 2.2em;
-        padding-top: 3px;
-        position: relative;
-        bottom: 50px;
-        left: 50px;
+        height: 2.5em;
+        position: absolute;
+        top: -5px;
+        left: 130%;
+    }
+
+    .navbar-toggle {
+        margin-top: 15px;
     }
 
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a {
