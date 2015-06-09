@@ -1,14 +1,6 @@
-/*!
- * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-
-/*#logo {
-    position: relative;
-    bottom: 11px;
-}*/
+.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 #logo_text {
     height: 2.5em;
@@ -45,8 +37,43 @@ nav a:hover {
 }
 
 .navbar li a {
+    height: 60px;
+}
+
+.navlink-text {
     position: relative;
     top: 2px;
+}
+
+.schedule-navlink {
+    position: relative;
+    bottom: 3px;
+}
+
+.schedule-navlink:link, .schedule-navlink:hover, .schedule-navlink:focus,
+.estimatestat-navlink:link, .estimatestat-navlink:hover, .estimatestat-navlink:focus {
+    background-color: transparent;
+}
+
+.schedule-navlink-text {
+    padding-bottom: 3px;
+    color: #fff;
+}
+
+.schedule-navlink-text:hover {
+    color: #fff;
+}
+
+.estimatestat-navlink, .estimatestat-navlink:link, .estimatestat-navlink:visited, .estimatestat-navlink:focus {
+    color: #4db6ac;
+}
+
+.navbar-fixed-top .estimatestat-navlink:hover {
+    color: #80cbc4;
+}
+
+.top-nav-collapse .estimatestat-navlink:hover {
+    color: #009688;
 }
 
 @media (max-width: 766px) {
@@ -98,6 +125,7 @@ nav a:hover {
     .navbar-fixed-top {
         height: 80px;
         color: rgba(255, 255, 255, 0.8);
+        padding-top: 10px;
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -161,6 +189,7 @@ nav a:hover {
         background-color: #f8f8f8;
         border: #e7e7e7 solid 1px;
         color: #ADADAD;
+        padding-top: 0;
     }
 
     .top-nav-collapse .navbar-brand {
@@ -321,8 +350,8 @@ of those sections to manage the look and feel of the site. */
    /* background: #40beb1;*/
 }
 
-.pilots-section {
-    height: 100%;
+.news-section {
+    height: 50%;
     padding-top: 150px;
     text-align: center;
     background: #fff;

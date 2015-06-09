@@ -36,8 +36,12 @@ body {
 	top: 130px;
 }
 
-#about, #products, #industries, #pilots {
-	padding: 400px 0;
+#about, #products, #industries {
+	height: 800px;
+}
+
+#news {
+	height: 300px;
 }
 
 #subscribe {
