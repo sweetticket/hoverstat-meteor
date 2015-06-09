@@ -1,6 +1,12 @@
 body {
 	font-family: OpenSans;
 	font-weight: bold;
+	background-color: transparent;
+}
+
+.main-content {
+	position: absolute;
+	top: 0;
 }
 
 .scroll-down-btn {
