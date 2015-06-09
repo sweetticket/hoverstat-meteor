@@ -1,13 +1,12 @@
 body {
-	font-family: OpenSans;
-	font-weight: bold;
+	background-color: transparent;
 }
 
 .scroll-down-btn {
 	margin-top: 20px;
 }
 
-#intro {
+/*#intro {
 	text-align: center;
 	background: url('/images/banner_dark.jpg') no-repeat center center;
 	-webkit-background-size: cover;
@@ -18,11 +17,13 @@ body {
 	min-height: 700px;
 	position: relative;
 
-}
+}*/
 
 #title {
 	width: 340px;
 	height: auto;
+	margin-top: 260px;
+	margin-bottom: 30px;
 }
 
 .intro-text {
@@ -31,7 +32,7 @@ body {
 }
 
 #about, #products, #industries, #subscribe, #pilots {
-	padding: 400px 0;
+	padding: 50px 0;
 }
 
 .scroll-down-btn, .scroll-down-btn:link, .scroll-down-btn:visited {
@@ -54,4 +55,51 @@ body {
 		height: auto;
 	}
 
+}
+
+/* Materialize */
+
+.parallax img {
+	width: 100vw;
+	height: auto;
+}
+
+.parallax-container{
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+#intro-parallax {
+	min-height: 900px;
+}
+
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+/*    top: 10%;
+*/  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
 }

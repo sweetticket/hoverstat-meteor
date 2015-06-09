@@ -24,7 +24,7 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
+                        <a class="page-scroll" href="#index-banner"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -47,4 +47,30 @@
         </div>
         <!-- /.container -->
     </nav>
+
+</template>
+
+<template name="MaterializeNav">
+    <div class="navbar-fixed">
+        <nav class="white navbar" role="navigation">
+            <div class="nav-wrapper">
+                <a href="#page-top" id="logo-container" class="brand-logo page-scroll grey-text text-darken-2">Logo</a>
+                <a href="#page-top" data-activates="mobile-demo" class="button-collapse page-scroll"><i class="mdi-navigation-menu grey-text text-darken-2"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="page-scroll grey-text text-darken-2" href="#about">About</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#products">Products</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#industries">Industries</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#pilots">Pilots</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#subscribe">Subscribe</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a class="page-scroll grey-text text-darken-2" href="#about">About</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#products">Products</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#industries">Industries</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#pilots">Pilots</a></li>
+                    <li><a class="page-scroll grey-text text-darken-2" href="#subscribe">Subscribe</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </template>
