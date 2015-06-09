@@ -36,8 +36,21 @@ body {
 	top: 130px;
 }
 
-#about, #products, #industries, #subscribe, #pilots {
+#about, #products, #industries, #pilots {
 	padding: 400px 0;
+}
+
+#subscribe {
+	color: #fff;
+	text-align: center;
+	background: url('/images/droneequipment.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 400px;
+	position: relative;
 }
 
 .scroll-down-btn, .scroll-down-btn:link, .scroll-down-btn:visited {
