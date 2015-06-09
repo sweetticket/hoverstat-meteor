@@ -12,6 +12,7 @@
 
 nav {
     background-color: transparent;
+    min-height: 60px;
 }
 
 nav ul a {
@@ -21,7 +22,7 @@ nav ul a {
 }
 
 .navbar {
-    min-height: 70px;
+    min-height: 60px;
 }
 
 .navbar-fixed-top {
@@ -79,6 +80,16 @@ nav a:hover {
 .top-nav-collapse .estimatestat-navlink:hover {
     color: #009688;
 }
+
+ @media (max-width: 600px){
+    #logo, #logo_text {
+        padding-bottom: 5px;
+    }
+    .navbar-toggle {
+        position: relative;
+        bottom: 1px;
+    }
+ }
 
 @media(min-width:1200px) {
 
