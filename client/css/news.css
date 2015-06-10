@@ -1,0 +1,14 @@
+.news-logo {
+	width: 300px;
+}
+
+.newslink {
+	padding: 0 70px;
+}
+
+.news-logo:hover {
+	opacity: 0.8;
+	-webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+}

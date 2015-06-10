@@ -11,6 +11,8 @@ if (Meteor.isClient) {
   Template.Main.rendered = function () {
     // Init ScrollSpy
     $('.scrollspy').scrollSpy();
+    // Init slider
+    $('.slider').slider({full_width: false});
 
           //jQuery to collapse the navbar on scroll
       $(window).scroll(function() {

@@ -202,6 +202,35 @@ html, body, .container-fluid {
 	font-style: italic;
 }
 
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/RobotoThin.ttf") format("opentype");
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/RobotoLight.ttf") format("opentype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/RobotoMedium.ttf") format("opentype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/RobotoRegular.ttf") format("opentype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/RobotoBold.ttf") format("opentype");
+	font-weight: bold;
+}
 
 body {
     width: 100%;
@@ -220,4 +249,8 @@ html {
 
 .highlight {
 	color: #40beb1;
+}
+
+a, a:link, a:visited, a:hover {
+	text-decoration: none;
 }

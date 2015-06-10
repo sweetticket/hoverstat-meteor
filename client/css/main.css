@@ -1,5 +1,5 @@
 body {
-	font-family: OpenSans;
+	font-family: Roboto;
 	font-weight: bold;
 	background-color: transparent;
 }
@@ -36,12 +36,23 @@ body {
 	top: 130px;
 }
 
+.schedule-headerlink {
+	font-family: Roboto;
+	margin-top: 40px;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.schedule-headerlink:link, .schedule-headerlink:visited, .schedule-headerlink:hover {
+	color: #fff;
+}
+
 #about, #products, #industries {
 	height: 800px;
 }
 
 #news {
-	height: 300px;
+	height: 400px;
 }
 
 #subscribe {
