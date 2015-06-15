@@ -1,0 +1,17 @@
+.footer-link, .footer-link:link, .footer-link:visited {
+	color: #fff;
+	opacity: 1;
+}
+
+.footer-link:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	-webkit-transition: opacity .2s linear;
+        -moz-transition: opacity .2s linear;
+        transition: opacity .2s linear;
+}
+
+.social-icon {
+	font-size: 40px;
+	padding: 15px 10px;
+}

@@ -1,0 +1,46 @@
+#subscribe h1 {
+	padding-bottom: 30px;
+}
+
+#subscribe form {
+	position: relative;
+	left: 4%;
+}
+
+#subscribe .input-field {
+	position: relative;
+	left: 8%;
+}
+
+#subscribe input {
+	background-color: rgba(255,255,255,0.7);
+	padding: 15px 20px;
+	border-radius: 5px;
+	color: #424242;
+	font-size: 22px;
+}
+
+#subscribe input:focus {
+	background-color: rgba(255,255,255,0.9);
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#subscribe label {
+	color: #4db6ac;
+	font-size: 18px;
+	padding: 3px 0 0 10px;
+}
+
+#subscribe .btn {
+	width: 150px;
+	height: 58px;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+#subscribe .btn .valign {
+	position: relative;
+	top: 10px;
+}
