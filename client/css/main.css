@@ -47,12 +47,16 @@ body {
 	color: #fff;
 }
 
-#about, #products, #industries {
+#industries {
+	min-height: 1100px;
+}
+
+#about, #products {
 	height: 800px;
 }
 
 #news {
-	height: 400px;
+	min-height: 400px;
 }
 
 #subscribe {

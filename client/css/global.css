@@ -254,3 +254,7 @@ html {
 a, a:link, a:visited, a:hover {
 	text-decoration: none;
 }
+
+a:hover{
+	cursor: pointer;
+}
