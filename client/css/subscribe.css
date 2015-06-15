@@ -40,6 +40,11 @@
 	margin-top: 10px;
 }
 
+#subscribe .btn:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
 #subscribe .btn .valign {
 	position: relative;
 	top: 10px;
