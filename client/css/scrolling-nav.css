@@ -16,7 +16,7 @@ nav {
 }
 
 nav ul a {
-    font-size: 16px;
+    font-size: 14px;
     font-family: OpenSans;
     font-weight: normal;
 }
@@ -91,7 +91,7 @@ nav a:hover {
     }
  }
 
-@media(min-width:1200px) {
+@media(min-width:900px) {
 
     .navbar-nav {
         float: right;
@@ -136,7 +136,7 @@ nav a:hover {
     .navbar-fixed-top {
         height: 80px;
         color: rgba(255, 255, 255, 0.8);
-        padding-top: 10px;
+        margin-top: -2px;
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -257,7 +257,7 @@ nav a:hover {
 
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 899px) {
 
     .navbar-nav {
         clear: both;
