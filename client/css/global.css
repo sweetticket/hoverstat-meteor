@@ -4,6 +4,11 @@ html, body, .container-fluid {
 	padding: 0;
 }
 
+section {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 @font-face {
 	font-family: BikoBlack;
 	src: url("../fonts/BikoBlack.otf") format("opentype");

@@ -1,7 +1,8 @@
-/*.products-imgs img {
+.product-img {
 	width: 100%;
-}*/
+	height: auto;
+}
 
-/*.slider {
-	min-height: 500px;
-}*/
+#products h1 {
+	padding-bottom: 50px;
+}

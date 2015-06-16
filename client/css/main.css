@@ -48,11 +48,15 @@ body {
 }
 
 #industries {
-	min-height: 1100px;
+	min-height: 1200px;
 }
 
-#about, #products {
-	height: 800px;
+#about {
+	min-height: 600px;
+}
+
+#products {
+	min-height: 800px;
 }
 
 #news {

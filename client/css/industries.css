@@ -1,14 +1,18 @@
-.circle, .badge {
+.circle {
 	width: 200px;
 	height: 200px;
 	margin: 15px;
 }
 
 #industries h1 {
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
-#industries .second-row {
+#industries .container {
+	margin-top: 20px;
+}
+
+#industries .second-row div {
 	position: relative;
 	left: 17%;
 
@@ -16,7 +20,7 @@
 
 @media (max-width: 600px){
 
-	#industries .second-row {
+	#industries .second-row div {
 		position: relative;
 		left: 0%;
 	}

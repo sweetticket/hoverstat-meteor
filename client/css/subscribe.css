@@ -3,13 +3,13 @@
 }
 
 #subscribe form {
-	position: relative;
-	left: 4%;
+	/*position: relative;
+	left: 4%;*/
 }
 
 #subscribe .input-field {
 	position: relative;
-	left: 8%;
+	left: 12%;
 }
 
 #subscribe input {
