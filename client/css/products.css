@@ -6,3 +6,32 @@
 #products h1 {
 	padding-bottom: 50px;
 }
+
+#products-info {
+	text-align: left;
+	padding: 20px 40px 30px 40px;
+	border-radius: 10px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+#products-info h2 {
+	color: #009688;
+	font-size: 30px;
+	border-bottom: 1px solid #009688;
+	padding-bottom: 15px;
+}
+
+#products-info p {
+	margin: 25px 25px;
+}
+
+.flow-text {
+	font-size: 22px;
+}
+
+.product-text {
+	font-size: 18px;
+	line-height: 70px;
+}

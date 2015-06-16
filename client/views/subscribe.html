@@ -3,15 +3,18 @@
     <div class="container">
      	<div class="row">
            <h1 class="white-text">Want in? Subscribe to our Newsletter!</h1>
-		    <form class="col s12">
+		    <form class="col s12" id="subscribe-form" data-parsley-validate>
 		      <div class="row">
 		        <div class="input-field col s6">
-		          <input id="email" type="email" class="validate">
+		          <input id="email" type="email" data-parsley-type="email" required data-parsley-required="true">
 		          <label for="email">Email</label>
 		        </div>
 		        <div class="col s12 m6 lg6">
-			        <div class="btn valign-wrapper waves-effect waves-light"><span class="valign">Submit</span></div>	
+			        <div class="btn valign-wrapper waves-effect waves-light subscribe-btn"><span class="valign">Submit</span></div>	
 		      	</div>
+		      </div>
+		      <div class="row">
+		      	<span class='success-msg'> Email successfully added! </span>
 		      </div>
 		    </form>
         </div>
