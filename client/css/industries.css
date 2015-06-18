@@ -33,3 +33,31 @@
 	}
 
 }
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px) {
+
+	#industries .second-row div {
+		padding-top: 10px;
+		position: relative;
+		left: 0%;
+	}
+
+	.industries-item {
+		padding-bottom: 15px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.industries-item h3 {
+		font-size: 26px;
+		width: 100%;
+	}
+
+	.industries-item p {
+		font-size: 20px;
+		width: 100%;
+	}
+}

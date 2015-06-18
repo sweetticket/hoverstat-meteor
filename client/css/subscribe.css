@@ -64,3 +64,29 @@
   	background-color: rgba(0,0,0,0.8);
   	opacity: 0;
 }
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px) {
+
+
+	#subscribe .input-field {
+		position: relative;
+		left: -1%;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#subscribe .success-msg {
+		padding: 10px;
+		width: 90%;
+		margin: 0 auto;
+		font-size: 20px;
+		text-align: center;
+	  	background-color: rgba(0,0,0,0.8);
+	  	opacity: 0;
+	}
+
+
+}

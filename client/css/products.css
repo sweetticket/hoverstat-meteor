@@ -35,3 +35,47 @@
 	font-size: 18px;
 	line-height: 70px;
 }
+
+.product-item p {
+	display: none;
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px) {
+
+	#products-info {
+		display: none;
+	}
+
+	.product-item {
+		width: 100%;
+	}
+
+	.product-item p {
+		display: block;
+		padding-bottom: 15px;
+		font-size: 20px;
+		width: 100%;
+	}
+
+	.product-item {
+		padding-bottom: 15px;
+	}
+
+
+	.product-text {
+		font-size: 26px;
+		line-height: 30px;
+		width: 100%;
+		padding: 20px 0;
+		margin: 20px 0;
+	}
+
+	.product-img {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+}

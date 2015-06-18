@@ -55,7 +55,7 @@ if (Meteor.isClient) {
                       "<p class='flow-text'>An integrated solution that allows contractors to collect leads," +
                       " inspect the roof, and produce an estimate, all within one moblie app.</p>";
           var estimatestat_text = "<h2>EstimateStat</h2><br>" +
-                      "<p class='flow-text'>The estimater contains a rules engine that allows you to produce an" +
+                      "<p class='flow-text'>The estimator contains a rules engine that allows you to produce an" +
                       " estimate with accurate calculations every time.</p>";
           var erp_text = "<h2>ERP: From Lead to Order</h2><br>" +
                       "<p class='flow-text'>This mobile solution works to bring your business full cycle, from" +
