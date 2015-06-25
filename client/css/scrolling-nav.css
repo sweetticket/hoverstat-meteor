@@ -88,7 +88,6 @@ nav a:hover {
     .navbar-toggle {
         position: relative;
         bottom: 1px;
-        margin-top: 30px;
     }
  }
 
@@ -409,6 +408,13 @@ and (max-device-width : 736px) {
 
   #logo, #logo_text, .navbar-brand {
     margin-top: 10px;
+    margin-left: 5px;
   }
+
+  .navbar-toggle {
+        position: relative;;
+        top: 19px;
+        left: 8px;
+    }
 
 }

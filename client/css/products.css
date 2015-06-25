@@ -3,6 +3,14 @@
 	height: auto;
 }
 
+.product-img:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	-webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+}
+
 #products h1 {
 	padding-bottom: 50px;
 }

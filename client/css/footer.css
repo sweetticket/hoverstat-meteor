@@ -23,3 +23,7 @@
 .bio {
 	padding-right: 10px;
 }
+
+footer.page-footer {
+  margin-top: 0;
+ }

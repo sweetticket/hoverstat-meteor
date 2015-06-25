@@ -50,16 +50,16 @@ if (Meteor.isClient) {
 
           var cad_text = "<h2>Aerial CADs Stat</h2><br>" +
                     "<p class='flow-text'>HoverStat provides 3D Aerial CADs with measurements captured by a" +
-                      " drone on-site in under 10 minutes.</p>";
+                      " drone on-site in under 10 minutes.<br><br><strong>Hover over the images above to view descriptions.</strong></p>";
           var crm_text = "<h2>Integrated CRM Solution</h2><br>" +
                       "<p class='flow-text'>An integrated solution that allows contractors to collect leads," +
-                      " inspect the roof, and produce an estimate, all within one moblie app.</p>";
+                      " inspect the roof, and produce an estimate, all within one moblie app.<br><br><strong>Hover over the images above to view descriptions.</strong></p>";
           var estimatestat_text = "<h2>EstimateStat</h2><br>" +
                       "<p class='flow-text'>The estimator contains a rules engine that allows you to produce an" +
-                      " estimate with accurate calculations every time.</p>";
+                      " estimate with accurate calculations every time.<br><br><strong>Hover over the images above to view descriptions.</strong></p>";
           var erp_text = "<h2>ERP: From Lead to Order</h2><br>" +
                       "<p class='flow-text'>This mobile solution works to bring your business full cycle, from" +
-                      " the moment a canvasser knocks on the door to placing the purchase order.</p>";
+                      " the moment a canvasser knocks on the door to placing the purchase order.<br><br><strong>Hover over the images above to view descriptions.</strong></p>";
 
           var productID = $(event.target).attr('id');
 

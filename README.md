@@ -1,1 +1,1 @@
-Building a new website for SmartyPans, using meteor
+Building a new website for HoverStat, using meteor
