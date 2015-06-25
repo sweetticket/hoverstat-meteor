@@ -5,31 +5,25 @@
       <p>Description goes here.</p>
 
         <div class="row">
-		    <form class="col s12" id="flightform">
+		    <form class="col s12" id="flightform" data-parsley-validate>
 
 		      <div class="row">
 
-		        <div class="input-field col s6">
-		          <input id="first_name" type="text" data-parsley-type="text" class="validate" length="30" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[1, 30]">
-		          <label for="first_name">First Name</label>
-		        </div>
-		        <div class="input-field col s6">
-		          <input id="last_name" type="text" data-parsley-type="text" class="validate" length="30" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[1, 30]">
-		          <label for="last_name">Last Name</label>
+		        <div class="input-field col s12">
+		          <input id="name" type="text" data-parsley-type="text" class="validate" length="30" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[1, 30]" autofocus>
+		          <label for="first_name">Full Name</label>
 		        </div>
 
 		      </div>
 		      
 		      <div class="row">
-		        <div class="input-field col s12">
+		        <div class="input-field col s6">
 		          <input id="flightemail" type="email" class="validate"  length="50" data-parsley-type="email" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[3, 50]">
 		          <label for="flightemail">Email</label>
 		        </div>
-		      </div>
 
-		      <div class="row">
-		        <div class="input-field col s12">
-		          <input id="phone" type="text" class="validate" length="50" data-parsley-type="text" data-parsley-pattern="^\d{3} \d{3} \d{4}$" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-error-message="Not a valid phone number">
+		        <div class="input-field col s6">
+		          <input id="phone" type="text" class="validate" length="50" data-parsley-type="text" data-parsley-pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-error-message="Not a valid phone number">
 		          <label for="phone">Phone</label>
 		        </div>
 		      </div>

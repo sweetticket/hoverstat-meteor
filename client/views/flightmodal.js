@@ -6,20 +6,20 @@ if (Meteor.isClient) {
 		// }
 	});
 
-	Template.FlightModal.onRendered(function () {
+	Template.FlightModal.rendered = function () {
         // Init select
 	    this.$('select').material_select();
 	    // Init character counter
 	    this.$('input#input_text, textarea#textarea1').characterCounter();
 
 	    $('#flightform').parsley({trigger: 'change'});
-	 });
+	    
+	 }
 
 	Template.FlightModal.events({
 		'click #flight-submit': function (event, template) {
 	      event.preventDefault();
-	      var firstname = $('#first_name').val();
-	      var lastname = $('#last_name').val();
+	      var name = $('#name').val();
 	      var email = $('#flightemail').val();
 	      var phone = $('#phone').val();
 	      var addr1 = $('#address1').val();
