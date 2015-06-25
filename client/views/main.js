@@ -15,6 +15,8 @@ if (Meteor.isClient) {
     $('.scrollspy').scrollSpy();
     // Init slider
     $('.slider').slider({full_width: false});
+    // Init modal
+    $('.modal-trigger').leanModal();
 
           //jQuery to collapse the navbar on scroll
       $(window).scroll(function() {

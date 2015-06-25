@@ -12,8 +12,8 @@ Meteor.methods({
 
   },
 
-  deleteFollower: function (userId) {
-      Meteor.users.remove(userId);
+  deleteFollower: function (followerID) {
+      Followers.remove(followerID);
   },
   
 });
