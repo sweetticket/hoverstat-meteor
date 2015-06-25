@@ -1,11 +1,36 @@
 <template name="FlightModal">
   <div id="flight-modal" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Sign Up for a Drone Inspection</h4>
+      <p>Description goes here.</p>
+
+        <div class="row">
+		    <form class="col s12">
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <input id="first_name" type="text" class="validate">
+		          <label for="first_name">First Name</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name">Last Name</label>
+		        </div>
+		      </div>
+		      
+		      <div class="row">
+		        <div class="input-field col s12">
+		          <input id="email" type="email" class="validate">
+		          <label for="email">Email</label>
+		        </div>
+		      </div>
+		    </form>
+		</div>
+
+
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
     </div>
   </div>
 </template>
