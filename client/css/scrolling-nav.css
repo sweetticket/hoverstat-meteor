@@ -27,10 +27,12 @@ nav ul a {
 
 .navbar-fixed-top {
     box-shadow: none;
+    padding-top: 10px;
 }
 
 .top-nav-collapse {
     box-shadow: 0 2px 5px 0;
+    padding-top: 0px;
 }
 
 nav a:hover {

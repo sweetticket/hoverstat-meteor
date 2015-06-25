@@ -1,10 +1,11 @@
 Flights = new Mongo.Collection("flights");
 
 Meteor.methods({
-  createFlight: function (name, email, phone, industry, addr1, addr2, addr3, msg) {
+  createFlight: function (firstname, lastname, email, phone, industry, addr1, addr2, addr3, msg) {
 
     var flight = {
-      name: name,
+      firstname: firstname,
+      lastname: lastname,
       email: email,
       phone: phone,
       industry: industry,

@@ -5,31 +5,86 @@
       <p>Description goes here.</p>
 
         <div class="row">
-		    <form class="col s12">
+		    <form class="col s12" id="flightform">
+
 		      <div class="row">
+
 		        <div class="input-field col s6">
-		          <input id="first_name" type="text" class="validate">
+		          <input id="first_name" type="text" data-parsley-type="text" class="validate" length="30" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[1, 30]">
 		          <label for="first_name">First Name</label>
 		        </div>
 		        <div class="input-field col s6">
-		          <input id="last_name" type="text" class="validate">
+		          <input id="last_name" type="text" data-parsley-type="text" class="validate" length="30" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[1, 30]">
 		          <label for="last_name">Last Name</label>
 		        </div>
+
 		      </div>
 		      
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <input id="email" type="email" class="validate">
-		          <label for="email">Email</label>
+		          <input id="flightemail" type="email" class="validate"  length="50" data-parsley-type="email" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[3, 50]">
+		          <label for="flightemail">Email</label>
 		        </div>
 		      </div>
+
+		      <div class="row">
+		        <div class="input-field col s12">
+		          <input id="phone" type="text" class="validate" length="50" data-parsley-type="text" data-parsley-pattern="^\d{3} \d{3} \d{4}$" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-error-message="Not a valid phone number">
+		          <label for="phone">Phone</label>
+		        </div>
+		      </div>
+
+		      <div class="row">
+		        <div class="input-field col s12 l6">
+		          <select id="industry" class="browser-default" required data-parsley-required="true" data-parsley-trigger="change">
+				      <option value="" disabled selected>Choose your industry</option>
+				      <option value="Insurance">Insurance</option>
+				      <option value="Roofing">Roofing</option>
+				      <option value="Solar">Solar Panels</option>
+				      <option value="Utilities">Utilities</option>
+				      <option value="Construction">Construction</option> 
+				      <option value="Non-Profit">Non-Profit Partnership</option>
+				  </select>
+<!-- 				  <label for="industry" class="industry-label">Industry</label>
+ -->			    </div>
+			  </div>
+
+		      <div class="row">
+		        <div class="input-field col s12">
+		          <input id="addr1" type="text" data-parsley-type="text" class="validate" length="120" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[10, 120]">
+		          <label for="addr1">Address 1 to be inspected</label>
+		        </div>
+		      </div>
+
+		      <div class="row">
+		        <div class="input-field col s12">
+		          <input id="addr2" type="text" data-parsley-type="text" class="validate" maxlength="120" data-parsley-required="false">
+		          <label for="addr2">Address 2 to be inspected</label>
+		        </div>
+		      </div>
+
+		      <div class="row">
+		        <div class="input-field col s12">
+		          <input id="addr3" type="text" data-parsley-type="text" class="validate" maxlength="120" data-parsley-required="false">
+		          <label for="addr3">Address 3 to be inspected</label>
+		        </div>
+		      </div>
+
+		      <div class="row">
+		        <div class="input-field col s12">
+		          <textarea id="msg" data-parsley-type="text" class="materialize-textarea" name="msg" length="300" data-parsley-maxlength="300" maxlength="300" data-parsley-required="false"></textarea>
+		          <label for="msg">Your Message to Us</label>
+		        </div>
+		      </div>
+
 		    </form>
 		</div>
 
 
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+<!--       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+ -->  <input type="submit" value="Submit" id="flight-submit" class="modal-action waves-effect waves-green btn-flat" />
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
     </div>
   </div>

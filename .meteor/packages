@@ -18,3 +18,7 @@ fortawesome:fontawesome
 materialize:materialize
 amr:parsley.js
 accounts-password
+gildaspk:autoform-modals-materialize
+aldeed:simple-schema
+aldeed:autoform
+aldeed:collection2
