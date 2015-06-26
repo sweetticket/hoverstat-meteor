@@ -19,7 +19,18 @@
 
 #flight-modal {
 	margin-top: 20px;
+	min-height: 520px;
 }
+
+#flight-modal h4 {
+	font-size: 22px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#flight-modal p {
+	font-size: 14px;
+	margin-left: 10px}
 
 #flightform label::after {
 	font-size: 12px;
