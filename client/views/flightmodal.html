@@ -1,36 +1,36 @@
 <template name="FlightModal">
-  <div id="flight-modal" class="modal modal-fixed-footer">
+  <div id="flight-modal" class="modal">
     <div class="modal-content">
       <h4>Sign Up for a Drone Inspection</h4>
       <p>Description goes here.</p>
 
         <div class="row">
-		    <form class="col s12" id="flightform" data-parsley-validate>
+		    <form class="col s12" id="flightform">
 
 		      <div class="row">
 
 		        <div class="input-field col s12">
-		          <input id="name" type="text" data-parsley-type="text" class="validate" length="30" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[1, 30]" pattern="^[-\sa-zA-Z]+$" data-error="Not a valid name" autofocus>
-		          <label for="first_name">Full Name</label>
+		          <input id="name" type="text" class="validate" minlength="1" maxlength="40" required pattern="^[-\sa-zA-Z]+$" autofocus>
+		          <label for="first_name" data-error="Not a valid name">Full Name</label>
 		        </div>
 
 		      </div>
 		      
 		      <div class="row">
 		        <div class="input-field col s6">
-		          <input id="flightemail" type="email" class="validate"  length="50" data-parsley-type="email" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[3, 50]" data-error="Not a valid email">
-		          <label for="flightemail">Email</label>
+		          <input id="flightemail" type="email" class="validate"  minlength="3" maxlength="50" required>
+		          <label for="flightemail" data-error="Not a valid email">Email</label>
 		        </div>
 
 		        <div class="input-field col s6">
-		          <input id="phone" type="text" class="validate" length="50" data-parsley-type="text" data-parsley-pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-error-message="Not a valid phone number" data-error="Not a valid phone number">
-		          <label for="phone">Phone</label>
+		          <input id="phone" type="text" class="validate" minlength="9" maxlength="20" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required>
+		          <label for="phone" data-error="Not a valid phone number">Phone</label>
 		        </div>
 		      </div>
 
 		      <div class="row">
 		        <div class="input-field col s12 l6">
-		          <select id="industry" class="browser-default" required data-parsley-required="true" data-parsley-trigger="change">
+		          <select id="industry" class="browser-default" required>
 				      <option value="" disabled selected>Choose your industry</option>
 				      <option value="Insurance">Insurance</option>
 				      <option value="Roofing">Roofing</option>
@@ -39,34 +39,34 @@
 				      <option value="Construction">Construction</option> 
 				      <option value="Non-Profit">Non-Profit Partnership</option>
 				  </select>
-<!-- 				  <label for="industry" class="industry-label">Industry</label>
- -->			    </div>
+				  <label for="industry" class="industry-label" data-error="Please select an industry"></label>
+ 			    </div>
 			  </div>
 
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <input id="addr1" type="text" data-parsley-type="text" class="validate" length="120" required data-parsley-trigger="change" data-parsley-required="true" data-parsley-length="[10, 120]">
-		          <label for="addr1">Address 1 to be inspected</label>
+		          <input id="addr1" type="text" data-parsley-type="text" class="validate" minlength="10" maxlength="120" required>
+		          <label for="addr1" data-error="Invalid address length">Address 1 to be inspected</label>
 		        </div>
 		      </div>
 
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <input id="addr2" type="text" data-parsley-type="text" class="validate" maxlength="120" data-parsley-required="false">
-		          <label for="addr2">Address 2 to be inspected</label>
+		          <input id="addr2" type="text" minlength="10" maxlength="120" class="validate">
+		          <label for="addr2"  data-error="Invalid address length">Address 2 to be inspected</label>
 		        </div>
 		      </div>
 
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <input id="addr3" type="text" data-parsley-type="text" class="validate" maxlength="120" data-parsley-required="false">
-		          <label for="addr3">Address 3 to be inspected</label>
+		          <input id="addr3" type="text" class="validate" minlength="10" maxlength="120">
+		          <label for="addr3" data-error="Invalid address length">Address 3 to be inspected</label>
 		        </div>
 		      </div>
 
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <textarea id="msg" data-parsley-type="text" class="materialize-textarea" name="msg" length="300" data-parsley-maxlength="300" maxlength="300" data-parsley-required="false"></textarea>
+		          <textarea id="msg" type="text" class="materialize-textarea validate" name="msg" length="300" maxlength="300"></textarea>
 		          <label for="msg">Your Message to Us</label>
 		        </div>
 		      </div>

@@ -15,6 +15,6 @@ accounts-facebook
 accounts-twitter
 natestrauser:animate-css
 fortawesome:fontawesome
-materialize:materialize
 amr:parsley.js
 accounts-password
+materialize:materialize

@@ -17,29 +17,11 @@
 	font-size: 16px;
 }
 
-/*#flight-modal {
-	min-height: 770px;
-}*/
-
-.message-label {
-/*	position: relative;
-	top: 15px;
-	margin-left: 15px;*/
+#flight-modal {
+	margin-top: 20px;
 }
 
-
-/*
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
-input:focus,
-button:focus,
-button:active,
-button:hover
-{
-    outline:0px !important;
-    -webkit-appearance:none;
-}*/
-
+#flightform label::after {
+	font-size: 12px;
+	width: 200px;
+}

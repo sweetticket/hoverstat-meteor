@@ -8,11 +8,11 @@ if (Meteor.isClient) {
 
 	Template.FlightModal.rendered = function () {
         // Init select
-	    this.$('select').material_select();
+	    $('select').material_select(); // This doesn't work..
 	    // Init character counter
-	    this.$('input#input_text, textarea#textarea1').characterCounter();
+	    $('input, textarea').characterCounter();
 
-	    $('#flightform').parsley({trigger: 'change'});
+	    // $('#flightform').parsley({trigger: 'change'});
 	    
 	 }
 
