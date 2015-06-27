@@ -8,7 +8,7 @@ Meteor.methods({
       email: email,
       phone: phone,
       industry: industry,
-      address1: add1,
+      address1: addr1,
       address2: addr2,
       address3: addr3,
       message: msg,

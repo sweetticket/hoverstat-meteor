@@ -1,9 +1,9 @@
 <template name="FlightModal">
   <div id="flight-modal" class="modal">
-    <div class="modal-content">
+    <div id="modal-top" class="modal-content">
       <h4>Sign Up for a Drone Inspection</h4>
       <p>Have pilot fly over a house of your choice. For a limited time, we are providing this service free of cost!</p>
-
+      <span class="modal-msg">Please fill out all starred fields.</span>
         <div class="row">
 		    <form class="col s12" id="flightform">
 
@@ -11,7 +11,7 @@
 
 		        <div class="input-field col s12">
 		          <input id="name" type="text" class="validate" minlength="1" maxlength="40" required pattern="^[-\sa-zA-Z]+$" autofocus>
-		          <label for="first_name" data-error="Not a valid name">Full Name</label>
+		          <label for="name" data-error="Not a valid name">Full Name *</label>
 		        </div>
 
 		      </div>
@@ -19,19 +19,19 @@
 		      <div class="row">
 		        <div class="input-field col s6">
 		          <input id="flightemail" type="email" class="validate"  minlength="3" maxlength="50" required>
-		          <label for="flightemail" data-error="Not a valid email">Email</label>
+		          <label for="flightemail" data-error="Not a valid email">Email *</label>
 		        </div>
 
 		        <div class="input-field col s6">
 		          <input id="phone" type="text" class="validate" minlength="9" maxlength="20" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required>
-		          <label for="phone" data-error="Not a valid phone number">Phone</label>
+		          <label for="phone" data-error="Not a valid phone number">Phone *</label>
 		        </div>
 		      </div>
 
 		      <div class="row">
 		        <div class="input-field col s12 l6">
 		          <select id="industry" class="browser-default" required>
-				      <option value="" disabled selected>Choose your industry</option>
+				      <option value="" disabled selected>Choose your industry *</option>
 				      <option value="Insurance">Insurance</option>
 				      <option value="Roofing">Roofing</option>
 				      <option value="Solar">Solar Panels</option>
@@ -45,8 +45,8 @@
 
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <input id="addr1" type="text" data-parsley-type="text" class="validate" minlength="10" maxlength="120" required>
-		          <label for="addr1" data-error="Invalid address length">Address 1 to be inspected</label>
+		          <input id="addr1" type="text" class="validate" minlength="10" maxlength="120" required>
+		          <label for="addr1" data-error="Invalid address length">Address 1 to be inspected *</label>
 		        </div>
 		      </div>
 
@@ -78,7 +78,7 @@
     </div>
     <div class="modal-footer">
 <!--       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
- -->  <input type="submit" value="Submit" id="flight-submit" class="modal-action waves-effect waves-green btn-flat" />
+ -->  <a href="#modal-top" id="flight-submit" class="modal-action waves-effect waves-green btn-flat">Submit</a>
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
     </div>
   </div>

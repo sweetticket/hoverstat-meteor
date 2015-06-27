@@ -22,10 +22,11 @@ if (Meteor.isClient) {
 	      var name = $('#name').val();
 	      var email = $('#flightemail').val();
 	      var phone = $('#phone').val();
-	      var addr1 = $('#address1').val();
-	      var addr2 = $('#address2').val();
-	      var addr3 = $('#address3').val();
-	      var msg = $('#message').val();
+	      var industry = $('#industry').val();
+	      var addr1 = $('#addr1').val();
+	      var addr2 = $('#addr2').val();
+	      var addr3 = $('#addr3').val();
+	      var msg = $('#msg').val();
 
 	      // FIXME: REPLACE ALL OF THIS BELOW
 
@@ -34,23 +35,31 @@ if (Meteor.isClient) {
 
 	      // if error message exists..
 
-	      //   if ($('.parsley-required').length || $('.parsley-type').length || $('.parsley-error').length || email == "") {
-	      //     $('.success-msg').css('opacity', '0');
-	      //   } else {
+	        if (phone == "" || addr1 == "" || name == "" || email == "" || industry == null) {
+	        	$('.modal-msg').css('display', 'block');
+	        	 $('#flight-modal').animate({ scrollTop: 0 }, 'slow');
+	        } else {
+	        	$('.modal-msg').css('display', 'none');
+	          	Meteor.call("createFlight", name, email, phone, industry, addr1, addr2, addr3, msg, function(err){
+	            if (err != null){
+	              console.log(err.message);
+	            } else {
+	            	$('#name').val("");
+					$('#flightemail').val("");
+					$('#phone').val("");
+					$('#industry').val("");
+					$('#addr1').val("");
+					$('#addr2').val("");
+					$('#addr3').val("");
+					$('#msg').val("");
+					$('.valid').removeClass('valid');
+					$('#flight-modal .active').removeClass('active');
+	                $('#flight-modal').closeModal();
+	                Materialize.toast('<span class="yellow-text">Your flight has been scheduled!</span>', 5000, 'flight-toast');
+	            }
+	          });
 
-	      //     Meteor.call("createFollower", email, function(err){
-	      //       if (err != null){
-	      //          $('.success-msg').css('opacity', '0');
-	      //         console.log(err.message);
-	      //         // var err_text = "<span class='error-msg'>" + err.message + "</span>";
-	      //         // $('.result-msg').html(err_text);
-	      //       } else {
-	      //          $('.success-msg').css('opacity', '1');
-	      //         $('#email').val("");
-	      //       }
-	      //     });
-
-	      // }
+	      }
 
 
 	    }
