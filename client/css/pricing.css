@@ -1,0 +1,17 @@
+#pricing-intro {
+	padding-top: 180px;
+	text-align: center;
+/*	background: url('/images/banner_dark.jpg') no-repeat center center;
+*/	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 700px;
+	position: relative;
+}
+
+.pricing-header {
+	position: relative;
+	bottom: 20px;
+}
