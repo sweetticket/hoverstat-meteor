@@ -271,7 +271,7 @@ nav a:hover {
     height: 2.5em;
     position: absolute;
     top: -5px;
-    left: 150%;
+    left: 65%;
 }
 
 @media (max-width: 899px) {
