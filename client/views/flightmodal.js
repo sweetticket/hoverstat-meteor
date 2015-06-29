@@ -55,7 +55,7 @@ if (Meteor.isClient) {
 					$('.valid').removeClass('valid');
 					$('#flight-modal .active').removeClass('active');
 	                $('#flight-modal').closeModal();
-	                Materialize.toast('<span class="yellow-text">Your flight has been scheduled!</span>', 5000, 'flight-toast');
+	                Materialize.toast('<span class="yellow-text">Your form has been submitted. You will be contacted by a representative shortly.</span>', 5000, 'flight-toast');
 	            }
 	          });
 
