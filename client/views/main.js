@@ -18,11 +18,11 @@ if (Meteor.isClient) {
     // Init modal
     $('.modal-trigger').leanModal();
 
-    var e=document.getElementById("refreshed");
-    if (e.value=="no") {
-      e.value="yes";
+    var e = $("#refreshed");
+    if (e.val() == "no") {
+      e.val("yes");
     } else {
-      e.value="no";
+      e.val("no");
       Deps.autorun(function () {
         var self = this;
         thisCampaign = Session.get('campaign');
