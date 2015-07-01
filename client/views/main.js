@@ -18,6 +18,18 @@ if (Meteor.isClient) {
     // Init modal
     $('.modal-trigger').leanModal();
 
+    var e=document.getElementById("refreshed");
+    if (e.value=="no") {
+      e.value="yes";
+    } else {
+      e.value="no";
+      Deps.autorun(function () {
+        var self = this;
+        thisCampaign = Session.get('campaign');
+      });
+    }
+
+
           //jQuery to collapse the navbar on scroll
       $(window).scroll(function() {
           if ($(".navbar").offset().top > 50) {

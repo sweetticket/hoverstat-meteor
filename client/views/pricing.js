@@ -4,7 +4,7 @@ if (Meteor.isClient) {
       e.preventDefault();
 
       StripeCheckout.open({
-        key: 'pk_test_KHsVP79PU0bxFhp7AaOQANQp',
+        key: 'pk_live_cGhxW8tPCXrkMkbJNU7GfFeR',
         amount: 5000, // this is equivalent to $50
         name: 'Pay Now',
         description: 'Order Your Report ($50.00)',
@@ -23,7 +23,7 @@ if (Meteor.isServer) {
   Meteor.methods({
     'chargeCard': function(stripeToken) {
       check(stripeToken, String);
-      var Stripe = StripeAPI('sk_test_bJ3VagV7dg42O0ieMXYdvCH9');
+      var Stripe = StripeAPI('sk_live_jtRfCFAYIHSJR5CyiiQuKE4t');
 
       Stripe.charges.create({
         source: stripeToken,
