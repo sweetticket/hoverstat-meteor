@@ -17,8 +17,8 @@ if (Meteor.isClient) {
     $('.slider').slider({full_width: false});
     // Init modal
     $('.modal-trigger').leanModal();
-
     $('.active').removeClass('active');
+
   }
 
   Template.Main.events({
@@ -106,7 +106,8 @@ if (Meteor.isClient) {
 
       }
 
-    }
+    },
+
   });
 
 }

@@ -13,9 +13,11 @@ if (Meteor.isClient) {
 
     // Mobile collapse
     $('.button-collapse').sideNav();
+    $("li.active").removeClass('active');
 
     //jQuery to collapse the navbar on scroll
     $(window).scroll(function() {
+        $("li.active").removeClass('active');
         if ($(".navbar").offset().top > 50) {
             $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("z-depth-1");
         } else {
@@ -32,6 +34,7 @@ if (Meteor.isClient) {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
   }
 
   Template.Nav.events({
