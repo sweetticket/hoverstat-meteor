@@ -7,7 +7,6 @@ Router.route('/', function () {
   // {{> yield}}
   // GARecordPage('/');
   this.render('Main', {to: 'content'}); // Yield Main template to where {{> yield "content"}} is in layout.html
-  
 });
 
 Router.route('/pricing', function () {
