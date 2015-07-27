@@ -27,12 +27,11 @@ Meteor.methods({
         "Address 3: " + addr3 + "\n" +
         "Message: " + msg;
 
-    Email.send({
-      from: "ccomotti@gmail.com",
-      to: "ccomotti@gmail.com",
-      subject: "New Flight Request",
-      text: emailStr
-    });
+    Meteor.call('sendEmail',
+            "leanne@hoverstat.com",
+            "ccomotti@gmail.com",
+            "New Flight Request",
+            emailStr);
 
   },
 
