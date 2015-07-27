@@ -17,6 +17,23 @@ Meteor.methods({
 
     Flights.insert(flight);
 
+    var emailStr = "New Flight Request\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n" +
+        "Industry: " + industry + "\n" +
+        "Address 1: " + addr1 + "\n" +
+        "Address 2: " + addr2 + "\n" +
+        "Address 3: " + addr3 + "\n" +
+        "Message: " + msg;
+
+    Email.send({
+      from: "ccomotti@gmail.com",
+      to: "ccomotti@gmail.com",
+      subject: "New Flight Request",
+      text: emailStr
+    });
+
   },
 
   deleteFlight: function (flightId) {

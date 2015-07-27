@@ -2,6 +2,10 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+nav ul li.active {
+  background-color: transparent;
+}
+
 #logo_text {
     height: 2.5em;
     position: relative;
@@ -163,8 +167,8 @@ nav a:hover {
     .navbar-fixed-top .navbar-nav > .active > a,
     .navbar-fixed-top .navbar-nav > .active > a:hover,
     .navbar-fixed-top .navbar-nav > .active > a:focus {
-      color: #555;
-      background-color: #e7e7e7;
+      /*color: #555;
+      background-color: #e7e7e7;*/
     }
     .navbar-fixed-top .navbar-nav > .disabled > a,
     .navbar-fixed-top .navbar-nav > .disabled > a:hover,
