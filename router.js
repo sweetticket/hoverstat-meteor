@@ -12,7 +12,7 @@ Router.route('/', function () {
 Router.route('/pricing', function () {
   // render the Post template into the "main" region
   // {{> yield}}
-  // GARecordPage('/');
+  GARecordPage('/');
   this.render('Pricing', {to: 'content'}); // Yield Main template to where {{> yield "content"}} is in layout.html
   
 });

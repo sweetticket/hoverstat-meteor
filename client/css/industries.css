@@ -24,6 +24,10 @@
 	font-size: 16px;
 }
 
+.industries-item h3 {
+	text-transform: uppercase;
+}
+
 
 @media (max-width: 600px){
 
