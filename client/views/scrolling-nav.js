@@ -26,14 +26,16 @@ if (Meteor.isClient) {
     });
 
     //jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        $(".active").removeClass('active');
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+    // $('a.page-scroll').bind('click', function(event) {
+    //   event.preventDefault();
+    //     $(".active").removeClass('active');
+    //     var $anchor = $(this);
+    //     debugger
+    //     $('html, body').stop().animate({
+    //         scrollTop: $($anchor.attr('href')).offset().top
+    //     }, 1500, 'easeInOutExpo');
+        
+    // });
 
   }
 
@@ -42,5 +44,15 @@ if (Meteor.isClient) {
   //     // increment the counter when button is clicked
   //     Session.set('counter', Session.get('counter') + 1);
   //   }
+      "click .page-scroll": function(e, template) {
+        e.preventDefault();
+        $(".active").removeClass('active');
+        var $anchor = $(e.target);
+        debugger
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+      }
+
    });
 }

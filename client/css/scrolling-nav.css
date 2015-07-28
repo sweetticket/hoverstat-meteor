@@ -49,9 +49,10 @@ nav a:hover {
 
 .navbar li a {
     height: 60px;
+    line-height: 30px;
 }
 
-.navlink-text {
+.navlink-btn-text {
     position: relative;
     top: 2px;
 }
@@ -60,6 +61,7 @@ nav a:hover {
     position: relative;
     bottom: 3px;
 }
+
 
 .schedule-navlink:link, .schedule-navlink:hover, .schedule-navlink:focus,
 .estimatestat-navlink:link, .estimatestat-navlink:hover, .estimatestat-navlink:focus {
