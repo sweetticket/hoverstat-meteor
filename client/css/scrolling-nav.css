@@ -2,6 +2,10 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+nav ul li.active {
+  background-color: transparent;
+}
+
 #logo_text {
     height: 2.5em;
     position: relative;
@@ -45,9 +49,10 @@ nav a:hover {
 
 .navbar li a {
     height: 60px;
+    line-height: 30px;
 }
 
-.navlink-text {
+.navlink-btn-text {
     position: relative;
     top: 2px;
 }
@@ -56,6 +61,7 @@ nav a:hover {
     position: relative;
     bottom: 3px;
 }
+
 
 .schedule-navlink:link, .schedule-navlink:hover, .schedule-navlink:focus,
 .estimatestat-navlink:link, .estimatestat-navlink:hover, .estimatestat-navlink:focus {
@@ -163,8 +169,8 @@ nav a:hover {
     .navbar-fixed-top .navbar-nav > .active > a,
     .navbar-fixed-top .navbar-nav > .active > a:hover,
     .navbar-fixed-top .navbar-nav > .active > a:focus {
-      color: #555;
-      background-color: #e7e7e7;
+      /*color: #555;
+      background-color: #e7e7e7;*/
     }
     .navbar-fixed-top .navbar-nav > .disabled > a,
     .navbar-fixed-top .navbar-nav > .disabled > a:hover,
@@ -358,7 +364,6 @@ of those sections to manage the look and feel of the site. */
 .about-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
     /*background: #40beb1;*/
 }
 
