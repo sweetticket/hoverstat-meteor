@@ -7,7 +7,7 @@ nav ul li.active {
 }
 
 #logo_text {
-    height: 2.5em;
+    height: 1.9em;
     position: relative;
     bottom: 16px;
     left: 8px;
@@ -16,17 +16,18 @@ nav ul li.active {
 
 nav {
     background-color: transparent;
-    min-height: 60px;
+    min-height: 50px;
 }
 
 nav ul a {
-    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 12px;
     font-family: OpenSans;
     font-weight: normal;
 }
 
 .navbar {
-    min-height: 60px;
+    min-height: 50px;
 }
 
 .navbar-fixed-top {
@@ -35,7 +36,8 @@ nav ul a {
 }
 
 .top-nav-collapse {
-    box-shadow: 0 2px 5px 0;
+    /*box-shadow: 0 2px 5px #000;*/
+    box-shadow: none;
     padding-top: 0px;
 }
 
@@ -44,22 +46,24 @@ nav a:hover {
 }
 
 .navbar li {
-    height: 60px;
+    height: 50px;
 }
 
 .navbar li a {
-    height: 60px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 20px;
 }
 
 .navlink-btn-text {
     position: relative;
-    top: 2px;
+    top: 6px;
 }
 
 .schedule-navlink {
     position: relative;
-    bottom: 3px;
+    bottom: 7px;
+    font-size: 12px;
+    line-height: 1em;
 }
 
 
@@ -69,7 +73,6 @@ nav a:hover {
 }
 
 .schedule-navlink-text {
-    padding-bottom: 3px;
     color: #fff;
 }
 
@@ -87,6 +90,11 @@ nav a:hover {
 
 .top-nav-collapse .estimatestat-navlink:hover {
     color: #009688;
+}
+
+span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
+    font-size: 12px;
+    line-height: 1.9em;
 }
 
  @media (max-width: 600px){
@@ -112,13 +120,13 @@ nav a:hover {
     }
 
     .navbar-fixed-top #logo {
-        height: 3.5em;
+        height: 2.5em;
         position: relative;
         bottom: 5px;
     }
 
     .top-nav-collapse #logo {
-        height: 2.3em;
+        height: 1.5em;
         position: relative;
         bottom: 6px;
 
@@ -170,7 +178,7 @@ nav a:hover {
     .navbar-fixed-top .navbar-nav > .active > a:hover,
     .navbar-fixed-top .navbar-nav > .active > a:focus {
       /*color: #555;
-      background-color: #e7e7e7;*/
+      background-color: #000;*/
     }
     .navbar-fixed-top .navbar-nav > .disabled > a,
     .navbar-fixed-top .navbar-nav > .disabled > a:hover,
@@ -190,13 +198,13 @@ nav a:hover {
     }
     .navbar-fixed-top .navbar-collapse,
     .navbar-fixed-top .navbar-form {
-      border-color: #e7e7e7;
+      border-color: #000;
     }
     .navbar-fixed-top .navbar-nav > .open > a,
     .navbar-fixed-top .navbar-nav > .open > a:hover,
     .navbar-fixed-top .navbar-nav > .open > a:focus {
       color: #555;
-      background-color: #e7e7e7;
+      background-color: #000;
     }
 
     .navbar-toggle:hover, .navbar-toggle:focus {
@@ -204,9 +212,9 @@ nav a:hover {
 }
 
     .top-nav-collapse {
-        height: 60px;
-        background-color: #f8f8f8;
-        border: #e7e7e7 solid 1px;
+        height: 50px;
+        background-color: #000;
+        border: #000 solid 1px;
         color: #ADADAD;
         padding-top: 0;
     }
@@ -234,7 +242,7 @@ nav a:hover {
     .top-nav-collapse .navbar-nav > .active > a:hover,
     .top-nav-collapse .navbar-nav > .active > a:focus {
       color: #555;
-      background-color: #e7e7e7;
+      background-color: #000;
     }
     .top-nav-collapse .navbar-nav > .disabled > a,
     .top-nav-collapse .navbar-nav > .disabled > a:hover,
@@ -254,13 +262,13 @@ nav a:hover {
     }
     .top-nav-collapse .navbar-collapse,
     .top-nav-collapse .navbar-form {
-      border-color: #e7e7e7;
+      border-color: #000;
     }
     .top-nav-collapse .navbar-nav > .open > a,
     .top-nav-collapse .navbar-nav > .open > a:hover,
     .top-nav-collapse .navbar-nav > .open > a:focus {
       color: #555;
-      background-color: #e7e7e7;
+      background-color: #000;
     }
 
 }
@@ -321,7 +329,7 @@ nav a:hover {
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: #000;
   }
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .disabled > a:hover,

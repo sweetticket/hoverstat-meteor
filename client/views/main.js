@@ -51,6 +51,7 @@ if (Meteor.isClient) {
   }
 
   Template.Main.events({
+
   });
 
   Template.Products.events({
