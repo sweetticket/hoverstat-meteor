@@ -9,21 +9,41 @@ body {
 	top: 0;
 }
 
+.ontop {
+	position: relative;
+	z-index: 3;
+}
+
 .scroll-down-btn {
 	margin-top: 20px;
 }
 
-#intro {
+/*#intro {
 	text-align: center;
-	/*background: url('/images/banner_dark.jpg') no-repeat center center;
+	background: url('/images/banner_dark.jpg') no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-attachment: fixed;*/
+	background-attachment: fixed;
 	min-height: 900px;
 	position: relative;
 
+}*/
+
+#intro-overlay { 
+  background: rgba(0,24,42,0.5);
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 660px;
+}
+
+#intro-overlay .flow-text {
+  font-size: 16px;
 }
 
 #title {
@@ -33,7 +53,13 @@ body {
 
 .intro-text {
 	position: relative;
-	top: 130px;
+	top: 150px;
+	width: 50%;
+	left: 15%;
+}
+
+.intro-text h1 {
+	width: 70%;
 }
 
 .schedule-headerlink {
@@ -60,6 +86,7 @@ body {
 }
 
 #news {
+	margin-top: 660px;
 	min-height: 400px;
 }
 

@@ -49,9 +49,18 @@ if (Meteor.isClient) {
         $(".active").removeClass('active');
         var $anchor = $(e.target);
         debugger
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+
+        if ($anchor.is('img')){
+
+          $('html, body').stop().animate({
+            scrollTop: $('#page-top').offset().top
+          }, 1500, 'easeInOutExpo');
+
+        } else {
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo');
+        }
       }
 
    });

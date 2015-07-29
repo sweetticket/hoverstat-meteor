@@ -9,7 +9,7 @@ nav ul li.active {
 #logo_text {
     height: 1.9em;
     position: relative;
-    bottom: 16px;
+    bottom: 52px;
     left: 8px;
 }
 
@@ -36,7 +36,7 @@ nav ul a {
 }
 
 .top-nav-collapse {
-    /*box-shadow: 0 2px 5px #000;*/
+    /*box-shadow: 0 2px 5px rgba(255,255,255,1);*/
     box-shadow: none;
     padding-top: 0px;
 }
@@ -120,16 +120,14 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
     }
 
     .navbar-fixed-top #logo {
-        height: 2.5em;
+        height: 2.0em;
         position: relative;
         bottom: 5px;
+        opacity: 1.0;
     }
 
     .top-nav-collapse #logo {
-        height: 1.5em;
-        position: relative;
-        bottom: 6px;
-
+        opacity: 0;
     }
 
     .navbar-fixed-top #logo_text {
@@ -177,8 +175,8 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
     .navbar-fixed-top .navbar-nav > .active > a,
     .navbar-fixed-top .navbar-nav > .active > a:hover,
     .navbar-fixed-top .navbar-nav > .active > a:focus {
-      /*color: #555;
-      background-color: #000;*/
+      /*color: #333;
+      background-color: rgba(255,255,255,1);*/
     }
     .navbar-fixed-top .navbar-nav > .disabled > a,
     .navbar-fixed-top .navbar-nav > .disabled > a:hover,
@@ -198,13 +196,13 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
     }
     .navbar-fixed-top .navbar-collapse,
     .navbar-fixed-top .navbar-form {
-      border-color: #000;
+      border-color: rgba(255,255,255,1);
     }
     .navbar-fixed-top .navbar-nav > .open > a,
     .navbar-fixed-top .navbar-nav > .open > a:hover,
     .navbar-fixed-top .navbar-nav > .open > a:focus {
-      color: #555;
-      background-color: #000;
+      color: #333;
+      background-color: rgba(255,255,255,1);
     }
 
     .navbar-toggle:hover, .navbar-toggle:focus {
@@ -213,14 +211,14 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
 
     .top-nav-collapse {
         height: 50px;
-        background-color: #000;
-        border: #000 solid 1px;
-        color: #ADADAD;
+        background-color: rgba(255,255,255,1);
+        border: rgba(255,255,255,1) solid 1px;
+        color: #555;
         padding-top: 0;
     }
 
     .top-nav-collapse .navbar-brand {
-        color: #ADADAD;
+        color: #555;
     }
     .top-nav-collapse .navbar-brand:hover,
     .top-nav-collapse .navbar-brand:focus {
@@ -228,10 +226,10 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
       background-color: transparent;
     }
     .top-nav-collapse .navbar-text {
-      color: #ADADAD;
+      color: #555;
     }
     .top-nav-collapse .navbar-nav > li > a {
-      color: #ADADAD;
+      color: #555;
     }
     .top-nav-collapse .navbar-nav > li > a:hover,
     .top-nav-collapse .navbar-nav > li > a:focus {
@@ -241,8 +239,8 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
     .top-nav-collapse .navbar-nav > .active > a,
     .top-nav-collapse .navbar-nav > .active > a:hover,
     .top-nav-collapse .navbar-nav > .active > a:focus {
-      color: #555;
-      background-color: #000;
+      color: #333;
+      background-color: rgba(255,255,255,1);
     }
     .top-nav-collapse .navbar-nav > .disabled > a,
     .top-nav-collapse .navbar-nav > .disabled > a:hover,
@@ -262,13 +260,13 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
     }
     .top-nav-collapse .navbar-collapse,
     .top-nav-collapse .navbar-form {
-      border-color: #000;
+      border-color: rgba(255,255,255,1);
     }
     .top-nav-collapse .navbar-nav > .open > a,
     .top-nav-collapse .navbar-nav > .open > a:hover,
     .top-nav-collapse .navbar-nav > .open > a:focus {
-      color: #555;
-      background-color: #000;
+      color: #333;
+      background-color: rgba(255,255,255,1);
     }
 
 }
@@ -299,10 +297,11 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
     }
 
     #logo {
-        height: 2.1em;
+        /*height: 2.1em;
         position: absolute;
         top: 0;
-        left: 5%;
+        left: 5%;*/
+        display: none;
     }
 
     #logo_text {
@@ -310,7 +309,7 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
         height: 2.5em;
         position: absolute;
         top: -5px;
-        left: 130%;
+        left: 5%;
     }
 
     .navbar-toggle {
@@ -328,8 +327,8 @@ span.btn.waves-effect.waves-light.navlink-btn-text.schedule-navlink-text {
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #000;
+    color: #333;
+    background-color: rgba(255,255,255,1);
   }
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .disabled > a:hover,
