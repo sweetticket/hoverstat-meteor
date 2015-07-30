@@ -13,6 +13,15 @@
         transition: all .5s ease-in-out;
 }
 
+#owl .item{
+  margin: 3px;
+}
+#owl .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 736px) {

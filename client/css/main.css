@@ -82,7 +82,14 @@ body {
 }
 
 #products {
-	min-height: 1000px;
+	background: url('/images/sky.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 900px;
+	position: relative;
 }
 
 #news {
