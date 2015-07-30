@@ -85,15 +85,25 @@ body {
 	min-height: 600px;
 }
 
-#products {
+/*#products {
 	background: url('/images/sky.jpg') no-repeat center center;
+	background-position: bottom
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 	min-height: 900px;
+	height: 900px;
+	max-height: 900px;
 	position: relative;
+}*/
+
+.parallax-container {
+  min-height: 780px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
 }
 
 #news {
@@ -101,7 +111,7 @@ body {
 	min-height: 400px;
 }
 
-#subscribe {
+/*#subscribe {
 	color: #fff;
 	text-align: center;
 	background: url('/images/droneequipment.jpg') no-repeat center center;
@@ -112,7 +122,7 @@ body {
 	background-attachment: fixed;
 	min-height: 500px;
 	position: relative;
-}
+}*/
 
 .scroll-down-btn, .scroll-down-btn:link, .scroll-down-btn:visited {
 	font-size: 70px;

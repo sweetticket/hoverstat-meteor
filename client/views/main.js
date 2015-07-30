@@ -19,6 +19,9 @@ if (Meteor.isClient) {
     $('.modal-trigger').leanModal();
     $('.active').removeClass('active');
 
+    $('.parallax').parallax();
+
+
     var vid = document.getElementById("bgvid");
     var pauseButton = document.querySelector("#polina button");
 

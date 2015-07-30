@@ -1,7 +1,7 @@
 .products-container .col {
 	position: absolute;
 	right: 5%;
-	top: 150px;
+	top: 120px;
 	padding-left: 25px;
 }
 
@@ -11,6 +11,7 @@
 
 .flow-text {
 	font-size: 16px;
+	line-height: 20px;
 }
 
 .product-text {
