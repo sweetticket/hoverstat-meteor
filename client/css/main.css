@@ -62,6 +62,10 @@ body {
 	width: 70%;
 }
 
+.intro-text .flow-text {
+	max-width: 645px;
+}
+
 .schedule-headerlink {
 	font-family: Roboto;
 	margin-top: 40px;
