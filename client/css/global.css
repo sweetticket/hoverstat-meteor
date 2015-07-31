@@ -10,6 +10,34 @@ section {
 }
 
 @font-face {
+	font-family: PierSans;
+	src: url("../fonts/PierSans/pier-regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: PierSans;
+	src: url("../fonts/PierSans/pier-italic.otf") format("opentype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: PierSans;
+	src: url("../fonts/PierSans/pier-bold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: PierSans;
+	src: url("../fonts/PierSans/pier-bold-italic.otf") format("opentype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
 	font-family: BikoBlack;
 	src: url("../fonts/BikoBlack.otf") format("opentype");
 }
@@ -249,8 +277,12 @@ html {
 }
 
 h1 {
-    font-family: Lato;
-    font-size: 60px;
+    /*font-family: BigJohn;
+    font-size: 40px;*/
+    font-family: PierSans;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .lighter {

@@ -1,0 +1,31 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #000; 
+}
+video { 
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    right: 0;
+    min-width: 100vw;
+    min-height: 700px;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+   background: url('/images/video-preview.png') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(/images/video-preview.png) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}

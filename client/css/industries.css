@@ -1,27 +1,51 @@
 .circle {
-	width: 200px;
-	height: 200px;
+	width: 120px;
+	height: 120px;
 	margin: 15px;
 }
 
 #industries h1 {
-	padding-bottom: 50px;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+#industries .flow-text {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#industries .divider {
+}
+
+.industries-header {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 #industries .container {
 	margin-top: 20px;
 }
 
-#industries .second-row div {
+/*#industries .second-row div {
 	padding-top: 10px;
 	position: relative;
 	left: 17%;
 
-}
+}*/
 
-.industries-item p {
+/*.industries-item p {
 	padding: 10px;
 	font-size: 16px;
+}*/
+
+.industries-item h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.industries-row {
+	padding-left: 15%;
 }
 
 .industries-item h3 {
@@ -31,10 +55,10 @@
 
 @media (max-width: 600px){
 
-	#industries .second-row div {
+	/*#industries .second-row div {
 		position: relative;
 		left: 0%;
-	}
+	}*/
 
 }
 

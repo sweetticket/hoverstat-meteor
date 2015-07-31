@@ -9,11 +9,16 @@ body {
 	top: 0;
 }
 
+.ontop {
+	position: relative;
+	z-index: 3;
+}
+
 .scroll-down-btn {
 	margin-top: 20px;
 }
 
-#intro {
+/*#intro {
 	text-align: center;
 	background: url('/images/banner_dark.jpg') no-repeat center center;
 	-webkit-background-size: cover;
@@ -21,9 +26,24 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
-	min-height: 700px;
+	min-height: 900px;
 	position: relative;
 
+}*/
+
+#intro-overlay { 
+  background: rgba(0,24,42,0.5);
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 660px;
+}
+
+#intro-overlay .flow-text {
+  font-size: 16px;
 }
 
 #title {
@@ -33,7 +53,17 @@ body {
 
 .intro-text {
 	position: relative;
-	top: 130px;
+	top: 150px;
+	width: 50%;
+	left: 15%;
+}
+
+.intro-text h1 {
+	width: 70%;
+}
+
+.intro-text .flow-text {
+	max-width: 645px;
 }
 
 .schedule-headerlink {
@@ -48,22 +78,45 @@ body {
 }
 
 #industries {
-	min-height: 1300px;
+	min-height: 720px;
 }
 
 #about {
 	min-height: 600px;
 }
 
-#products {
-	min-height: 1000px;
+/*#products {
+	background: url('/images/sky.jpg') no-repeat center center;
+	background-position: bottom
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 900px;
+	height: 900px;
+	max-height: 900px;
+	position: relative;
+}*/
+
+.parallax-container {
+  min-height: 800px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
 }
 
 #news {
+	margin-top: 660px;
 	min-height: 400px;
 }
 
 #subscribe {
+	min-height: 570px;
+	line-height: normal;
+}
+
+/*#subscribe {
 	color: #fff;
 	text-align: center;
 	background: url('/images/droneequipment.jpg') no-repeat center center;
@@ -74,7 +127,7 @@ body {
 	background-attachment: fixed;
 	min-height: 500px;
 	position: relative;
-}
+}*/
 
 .scroll-down-btn, .scroll-down-btn:link, .scroll-down-btn:visited {
 	font-size: 70px;
