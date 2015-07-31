@@ -78,7 +78,7 @@ body {
 }
 
 #industries {
-	min-height: 1300px;
+	min-height: 720px;
 }
 
 #about {
@@ -109,6 +109,11 @@ body {
 #news {
 	margin-top: 660px;
 	min-height: 400px;
+}
+
+#subscribe {
+	min-height: 570px;
+	line-height: normal;
 }
 
 /*#subscribe {
