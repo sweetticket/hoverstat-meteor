@@ -13,7 +13,6 @@ iron:router
 accounts-ui
 accounts-facebook
 accounts-twitter
-natestrauser:animate-css
 fortawesome:fontawesome
 amr:parsley.js
 accounts-password
@@ -22,3 +21,5 @@ datariot:ganalytics
 mrgalaxy:stripe
 reactive-var
 email
+noorderstorm:wow
+natestrauser:animate-css
