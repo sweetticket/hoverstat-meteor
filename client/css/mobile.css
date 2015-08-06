@@ -24,21 +24,18 @@ and (max-device-width : 736px) {
     padding: 0 20px;
 	}
 
+	#intro-overlay {
+		background: url('/images/mobile-hero.png') no-repeat !important;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
 
 	.schedule-headerlink {
 		margin-top: 20px;
 	}
 
-	#intro {
-		text-align: center;
-		background: url('/images/banner_mobile.jpg') no-repeat;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		min-height: 370px;
-		position: relative;
-	}
 
 	#news {
 		 min-height: 350px;
@@ -193,4 +190,7 @@ and (max-device-width : 736px) {
     	width: auto !important;
     }
 
+    .footer-main-container {
+	    margin-left: 15% !important;
+    }
 }
