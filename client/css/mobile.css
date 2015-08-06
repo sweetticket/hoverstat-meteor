@@ -1,0 +1,196 @@
+/* iPhone 5 ~ iPhone 6 Plus */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px) {
+
+	.main-content {
+		position: absolute;
+		top: 60px;
+	}
+
+	#title {
+		width: 80%;
+		height: auto;
+	}
+
+
+	.intro-text {
+    position: relative;
+    top: 90px !important;
+    width: 50%;
+    left: 0 !important;
+    width: 100%;
+    padding: 0 20px;
+	}
+
+
+	.schedule-headerlink {
+		margin-top: 20px;
+	}
+
+	#intro {
+		text-align: center;
+		background: url('/images/banner_mobile.jpg') no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		min-height: 370px;
+		position: relative;
+	}
+
+	#news {
+		 min-height: 350px;
+		 padding-top: 50px;
+		 padding-bottom: 50px;
+	}
+
+	section {
+		width: 100%;
+		margin: 0;
+	}
+
+	.flow-text {
+		line-height: 1.5em;
+	}
+
+  .news-section, .about-section, .industries-section, .products-section, .subscribe-section {
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+  }
+
+  .products-container .col {
+    position: relative !important;
+    margin-top: 50px !important;
+    top: 0 !important;
+    right: 0 !important;
+    padding: 0 5px !important;
+    width: 100% !important;
+}
+
+#products {
+	padding-top: 0px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.product-item {
+	padding: 0 !important;
+}
+
+.product-item p {
+	padding-left: 50px !important;
+  padding-right: 10px !important;
+}
+
+.product-text {
+  font-size: 26px;
+  line-height: 30px;
+  padding: 20px 0;
+  margin: -20px 0px 0px 50px !important;
+  width: 85% !important;
+  display: inline-block !important;
+}
+
+.logo_bullet {
+  height: 2.5em !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.industries-row {
+	padding: 0 !important;
+}
+
+.industries-item {
+	width: 100% !important;
+}
+
+#industries .container {
+	margin-top: 0 !important;
+}
+
+.circle {
+	width: 200px !important;
+}
+
+#subscribe h1 {
+	text-align: left !important;
+  padding: 0 0 10px 15px !important;
+}
+
+#subscribe .input-field {
+	width: 90% !important;
+	position: relative;
+	left: 5% !important;
+}
+#subscribe input {
+  width: 85% !important;
+}
+#subscribe label {
+  padding: 3px 0 0 15px !important;
+}
+#subscribe form {
+	margin-left: 0 !important;
+}
+
+#subscribe .col.s12 {
+	width: 100% !important;
+}
+
+#subscribe .btn {
+	width: 150px !important;
+	margin: 0 auto !important;
+}
+
+  nav .container {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+
+  }
+
+  .navbar-header {
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-width: 0;
+
+  }
+
+  #logo, #logo_text, .navbar-brand {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .navbar-toggle {
+    position: relative;;
+    top: 19px;
+    }
+
+		.container .row {
+		   margin-left: -15px !important;
+		   margin-right: -15px !important;
+		}
+    .navbar-fixed-top {
+    	padding-top: 0px !important;
+    }
+
+    video, #bgvid {
+    	display: none !important;
+    }
+
+    div {
+    	width: auto !important;
+    }
+
+}

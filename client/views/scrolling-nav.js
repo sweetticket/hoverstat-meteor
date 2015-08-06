@@ -48,8 +48,6 @@ if (Meteor.isClient) {
         e.preventDefault();
         $(".active").removeClass('active');
         var $anchor = $(e.target);
-        debugger
-
         if ($anchor.is('img')){
 
           $('html, body').stop().animate({
